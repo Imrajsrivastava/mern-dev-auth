@@ -1,5 +1,5 @@
 node_modules/
 .env
 build/
-ecosystem.config.cjs/
+ecosystem.config.cjs
 frontend/

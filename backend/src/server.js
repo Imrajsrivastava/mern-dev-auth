@@ -1,7 +1,7 @@
 import express from 'express';
 import { connectionDb } from './config/db.js';
-import logger from './logger.js';
 import dotenv from 'dotenv';
+import logger from './utils/logger.js';
 import mongoose from 'mongoose';
 
 dotenv.config();

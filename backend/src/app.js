@@ -1,5 +1,5 @@
 import express from 'express';
-import logger from './logger.js';
+import logger from './utils/logger.js';
 import cors from 'cors';
 import userRouter from './routes/user.route.js';
 import { USER_ROUTE } from './config/constantRoute.js';
@@ -39,5 +39,4 @@ app.get('/', (req, res) => {
   });
 
 
-  //global error handler
   app.use(errorMiddleware)

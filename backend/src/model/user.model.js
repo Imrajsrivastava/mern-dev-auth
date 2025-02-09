@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-import logger from "../logger";
+import logger from "../utils/logger.js";
 import bcrypt from "bcrypt";
 const {Schema}=mongoose;
 const userSchema = new Schema({
@@ -15,8 +15,12 @@ const userSchema = new Schema({
     },
     password:{
         type:String,
-        required:[true,"Password is required"],
+        // required:[true,"Password is required"],
         minlength:6
+    },
+    googleId:{
+        type:String,
+    
     }
 },{timestamps:true})
 

@@ -1,8 +1,7 @@
 
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
-import logger from '../logger.js';
-
+import logger from '../utils/logger.js';
 dotenv.config();
 
 if(!process.env.MONGO_URI){
